@@ -28,7 +28,7 @@ git_prompt_info () {
 }
 
 unpushed () {
-  /usr/bin/git cherry -v @{upstream} 2>/dev/null
+  /usr/bin/git cherry -v origin/$(git_branch) 2>/dev/null
 }
 
 need_push () {
@@ -40,10 +40,10 @@ need_push () {
   fi
 }
 
-rb_prompt(){
-  if $(which rbenv &> /dev/null)
+rvm_prompt(){
+  if $(which rvm &> /dev/null)
   then
-	  echo "%{$fg_bold[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
+	  echo "%{$fg_bold[yellow]%}$(rvm tools identifier)%{$reset_color%}"
 	else
 	  echo ""
   fi
@@ -72,7 +72,7 @@ directory_name(){
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(rvm_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }

@@ -9,7 +9,11 @@ function title() {
 
   case $TERM in
   screen)
-    print -Pn "\ek$a:$3\e\\" # screen title (in ^A")
+    #if [[ $PWD =~ $PROJECTS  ]] then
+    #  export SCREENRC=$ZSH/screen/rails
+    #else
+    #  export SCREENRC=$ZSH/screen/default
+    #fi
     ;;
   xterm*|rxvt)
     print -Pn "\e]2;$2\a" # plain xterm title ($3 for pwd)

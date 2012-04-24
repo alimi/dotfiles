@@ -1,0 +1,22 @@
+#always display info at bottom of window
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
+
+#Turn off startup message
+startup_message off
+
+#Set scrollback
+defscrollback 5000
+
+#Enable multiuser mdoe for screen sharing
+#multiuser on
+
+#default screens for rails
+screen -t server	0
+screen -t spec		1
+screen -t code		2
+screen -t bash		3
+screen -t git		4
+
+#start in code screen
+select 2
