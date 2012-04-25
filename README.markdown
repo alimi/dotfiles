@@ -2,8 +2,13 @@
 
 # modified by ali
 
-This is a basic setup of dotfiles.  I removed a lot of stuff, but kept most
-of the zsh configuration.  I also added some screen configuration.
+This is a basic setup of dotfiles forked from 
+[Zach Holman's dotfiles](https://github.com/holman/dotfiles).
+
+Biased towards Ruby/Rails development on OS X.  I added configuration for 
+[GNU Screen](http://www.gnu.org/software/screen/), my preferred screen manager.  
+Since vim plugins are being managed by vundle, I am only tracking vimrc in this 
+project.  [Go here](https://github.com/gmarik/vundle) for more info on vundle.
 
 ## dotfiles
 
