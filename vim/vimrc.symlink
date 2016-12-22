@@ -41,6 +41,8 @@ Plugin 'gmarik/vundle'
 "
 " original repos on github
 Plugin 'tpope/vim-rails'
+Plugin 'reedes/vim-pencil'
+Plugin 'junegunn/goyo.vim'
 
 " Plugin 'tpope/vim-fugitive'
 " Plugin 'Lokaltog/vim-easymotion'
