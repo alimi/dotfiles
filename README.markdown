@@ -28,7 +28,18 @@ subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## install
 
-- `git clone git://github.com/holman/dotfiles ~/.dotfiles`
+### Prereqs
+
+* zsh as current shell
+  *  I used the one installed with macOS and made it my default by running `chsh -s /bin/zsh`
+     http://scottlab.ucsc.edu/xtal/shells.html
+  *  vundle is really angry until it is setup
+  *  need to commit an empty vim/vim.symlink directory
+
+* Had to set git's global gitignore file `git config --global core.excludesfile
+  ~/.gitignore`
+
+- `git clone git://github.com/alimi/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `rake install`
 
