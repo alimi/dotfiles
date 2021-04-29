@@ -22,6 +22,10 @@ set formatoptions+=n       " support for numbered/bullet lists
 set textwidth=80           " wrap at 80 chars by default
 set formatoptions+=t       " automatically wrap line after 80 chars
 
+if &diff
+  colorscheme blue " change diff colors so I can see the dang thing
+endif
+
 " ----------------------------------------------------------------------------
 "  Vundle!
 " ----------------------------------------------------------------------------
