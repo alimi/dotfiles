@@ -24,3 +24,5 @@ compinit
 PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 eval "$(nodenv init -)" # for nodenv
+
+eval "$(/opt/homebrew/bin/brew shellenv)" # for homebrew
